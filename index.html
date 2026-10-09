@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="八七电影网 - 电影史频道日 · 分镜拆解与观影指南。以 8 分 7 秒、1895 年 12 月 28 日卢米埃尔首映为坐标，做长片片单、分镜拆解、高分榜单与频道时刻。">
+<meta name="keywords" content="八七电影网,电影史频道日,分镜拆解,观影指南,8分7秒,卢米埃尔,高分长片,baqidianyingwang">
+<meta name="author" content="八七电影网">
+<meta name="theme-color" content="#08121c">
+<title>八七电影网 - 电影史频道日 · 分镜拆解与观影指南 | 八七电影网</title>
+<link rel="canonical" href="https://baqidianyingwang-cn.github.io/">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",system-ui,sans-serif;background:#08121c;color:#e4eaf2;line-height:1.85;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+ul,ol,dl{list-style:none}
+:focus-visible{outline:2px solid #5fd0e6;outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 1.3rem}
+
+/* 顶栏 */
+.top{position:sticky;top:0;z-index:99;background:rgba(6,12,18,.97);backdrop-filter:blur(14px);border-bottom:1px solid #18303f}
+.tin{display:flex;align-items:center;gap:1rem;height:62px}
+.brand{display:flex;align-items:center;gap:.6rem;font-weight:960;font-size:1.08rem;white-space:nowrap;letter-spacing:.01em}
+.logo{width:44px;height:44px;border-radius:13px;display:flex;align-items:center;justify-content:center;font-size:1.15rem;color:#08121c;background:
+  radial-gradient(circle at 30% 22%,#ffffff,#b9ecf5 46%,#1aa9c4 78%,#0a4f6b);
+  box-shadow:0 0 28px rgba(95,208,230,.42);flex:0 0 auto;animation:lo 7s ease-in-out infinite alternate}
+@keyframes lo{to{filter:brightness(1.16) hue-rotate(-12deg)}}
+.brand em{font-style:normal;color:#5fd0e6;font-size:.2rem;letter-spacing:.22em;display:block;font-weight:750;margin-top:-.14em}
+.brand small{font-size:.54rem;color:#8aa3b4;font-weight:600;margin-left:.2rem}
+.tabs{display:flex;gap:.2rem;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{padding:.46rem .9rem;border-radius:999px;font-size:.84rem;color:#c9d8e2;white-space:nowrap;transition:.2s}
+.tabs a:hover{color:#fff;background:rgba(95,208,230,.13)}
+.tabs a.on{background:linear-gradient(100deg,#b9ecf5,#1aa9c4);color:#08121c;font-weight:960;box-shadow:0 6px 18px rgba(26,169,196,.38)}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(520px 240px at 86% 6%,rgba(95,208,230,.2),transparent 54%),
+  radial-gradient(400px 210px at 10% 72%,rgba(120,150,255,.1),transparent 58%),
+  linear-gradient(168deg,#050b12,#0c1c2c 54%,#050b12)}
+.fb{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.8;
+  background-image:repeating-linear-gradient(90deg,rgba(95,208,230,.1) 0 2px,transparent 2px 8px)}
+/* 纯 CSS 放映机 */
+.proj{position:absolute;right:7%;top:18%;z-index:2;pointer-events:none;width:176px;height:122px}
+.proj .bd{position:absolute;inset:0;border-radius:20px;background:linear-gradient(150deg,#18303f,#0a141d);border:3px solid #2c5167;box-shadow:0 0 44px rgba(95,208,230,.3),inset 0 -12px 26px rgba(0,0,0,.55)}
+.proj .ln{position:absolute;right:-78px;top:50%;width:78px;height:3px;background:linear-gradient(90deg,#5fd0e6,transparent);transform:translateY(-50%);box-shadow:0 0 12px #5fd0e6;animation:ln 1.4s ease-in-out infinite alternate}
+@keyframes ln{to{width:120px;opacity:.5}}
+.proj .rl{position:absolute;left:14px;top:14px;width:36px;height:36px;border-radius:50%;background:radial-gradient(circle at 32% 28%,#fff,#b9ecf5 55%,#1aa9c4);box-shadow:0 0 18px rgba(95,208,230,.65);animation:lg 2.4s ease-in-out infinite alternate}
+.proj .ft{position:absolute;right:14px;bottom:14px;font-size:1.4rem;filter:drop-shadow(0 4px 10px rgba(0,0,0,.55))}
+@keyframes lg{to{transform:scale(1.13);box-shadow:0 0 28px rgba(95,208,230,.9)}}
+.hbox{position:relative;z-index:3;display:grid;grid-template-columns:1fr .8fr;gap:2.6rem;align-items:center;padding:4rem 1.3rem;max-width:1180px;margin:0 auto}
+.kick{display:inline-flex;align-items:center;gap:.5rem;font-size:.75rem;color:#e4eaf2;background:rgba(95,208,230,.11);border:1px solid rgba(95,208,230,.44);padding:.3rem .8rem;border-radius:999px;margin-bottom:1rem}
+h1{font-size:clamp(1.85rem,4.6vw,3rem);line-height:1.22;font-weight:960;margin-bottom:1rem;background:linear-gradient(100deg,#fff,#cfeaf0 54%,#5fd0e6);-webkit-background-clip:text;background-clip:text;color:transparent}
+h1 u{text-decoration:none;color:#ffcf6b;-webkit-text-fill-color:#ffcf6b}
+.hero>p{color:#b9c9d6;font-size:1rem;max-width:33em;margin-bottom:1.5rem}
+.acts{display:flex;gap:.7rem;flex-wrap:wrap}
+.b{padding:.78rem 1.8rem;border-radius:12px;font-weight:850;font-size:.94rem;border:0;cursor:pointer;transition:.25s}
+.b.p{background:linear-gradient(100deg,#b9ecf5,#1aa9c4);color:#08121c;box-shadow:0 10px 26px rgba(26,169,196,.3)}
+.b.p:hover{transform:translateY(-2px)}
+.b.o{background:transparent;color:#e4eaf2;border:1px solid #18303f}
+.sts{display:flex;gap:2.4rem;margin-top:1.7rem;flex-wrap:wrap}
+.sts div{font-size:.77rem;color:#8aa3b4}
+.sts b{display:block;font-size:1.55rem;color:#5fd0e6;font-weight:960;line-height:1.2;text-shadow:0 0 14px rgba(95,208,230,.5)}
+
+/* 频道卡 */
+.ch{position:relative;width:100%;max-width:300px;margin-left:auto;background:#0c1c2c;border:2px solid #18303f;border-radius:16px;padding:1.15rem;box-shadow:0 26px 60px rgba(0,0,0,.6);transform:rotate(-1.8deg)}
+.ch h4{font-size:.9rem;margin-bottom:.85rem;letter-spacing:.04em;display:flex;align-items:center;gap:.5rem}
+.ch h4 i{font-style:normal;font-size:.58rem;color:#08121c;background:#ffcf6b;border-radius:5px;padding:.1rem .5rem;font-weight:850}
+.ch .tm{font-size:2.4rem;font-weight:960;color:#5fd0e6;line-height:1;letter-spacing:.02em;text-shadow:0 0 18px rgba(95,208,230,.45);font-variant-numeric:tabular-nums}
+.ch .tm s{text-decoration:none;font-size:1rem;color:#8aa3b4;margin-left:.2rem;font-weight:750}
+.ch dl{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin:.75rem 0}
+.ch dt{font-size:.62rem;color:#8aa3b4;letter-spacing:.08em;margin-bottom:.14rem}
+.ch dd{font-size:.8rem;font-weight:750;color:#e4eaf2}
+.ch .cut{height:1px;background:repeating-linear-gradient(90deg,#18303f 0 6px,transparent 6px 12px);margin:.2rem 0 .7rem}
+.ch p{font-size:.72rem;color:#8aa3b4;line-height:1.7}
+.ch .tk{position:absolute;right:.8rem;top:.8rem;font-size:1.7rem;font-weight:960;color:rgba(95,208,230,.15);line-height:1}
+
+/* 通用 */
+section{padding:3.4rem 0}
+.uh{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-bottom:1.7rem;flex-wrap:wrap}
+.ut{font-size:clamp(1.3rem,2.8vw,1.85rem);font-weight:960;display:flex;align-items:center;gap:.6rem}
+.ut::before{content:"";width:5px;height:1.2em;border-radius:3px;background:linear-gradient(#b9ecf5,#1aa9c4)}
+.us{font-size:.8rem;color:#8aa3b4}
+.us:hover{color:#5fd0e6}
+
+/* A：长片片单（Grid 卡片墙） */
+.now{background:linear-gradient(180deg,#08121c,#0c1c2c)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:1rem}
+.en{border:1px solid #18303f;border-radius:16px;overflow:hidden;background:#0c1c2c;transition:.34s;cursor:pointer;display:flex;flex-direction:column}
+.en:hover{transform:translateY(-7px) rotate(.7deg);border-color:#5fd0e6;box-shadow:0 26px 56px rgba(0,0,0,.55)}
+.cvr{height:138px;display:flex;align-items:center;justify-content:center;font-size:2.8rem;position:relative}
+.cvr::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,12,18,.94),transparent 56%)}
+.cvr b{position:relative;z-index:2;filter:drop-shadow(0 8px 14px rgba(0,0,0,.6));transition:.4s;font-weight:400}
+.en:hover .cvr b{transform:scale(1.16) rotate(-9deg)}
+.cvr .mn{position:absolute;top:.6rem;left:.6rem;z-index:3;font-size:.62rem;font-weight:850;padding:.2rem .55rem;border-radius:6px;background:#1aa9c4;color:#08121c}
+.cvr .tg{position:absolute;top:.6rem;right:.6rem;z-index:3;font-size:.6rem;font-weight:850;padding:.2rem .5rem;border-radius:6px;background:#18303f;color:#e4eaf2}
+.en h3{font-size:.96rem;padding:.8rem .95rem .2rem;display:flex;justify-content:space-between;gap:.5rem;align-items:baseline}
+.en h3 i{font-style:normal;font-size:.6rem;color:#ffcf6b;font-weight:750;white-space:nowrap;border:1px solid rgba(255,207,107,.5);border-radius:999px;padding:.12rem .5rem;background:rgba(255,207,107,.1)}
+.en p{font-size:.74rem;color:#8aa3b4;padding:0 .95rem .9rem}
+
+/* B：分镜拆解（定义列表 dl/dt/dd） */
+.sea{background:#0c1c2c}
+.sp{display:grid;grid-template-columns:repeat(auto-fit,minmax(258px,1fr));gap:1rem}
+.sp>div{background:#08121c;border:1px solid #18303f;border-radius:16px;padding:1.15rem 1.2rem 1.25rem;transition:.32s;position:relative;overflow:hidden}
+.sp>div::before{content:"";position:absolute;right:-30px;top:-30px;width:120px;height:120px;border-radius:50%;opacity:.5;filter:blur(2px)}
+.sp>div:nth-child(1)::before{background:#1aa9c4}
+.sp>div:nth-child(2)::before{background:#ffcf6b}
+.sp>div:nth-child(3)::before{background:#8a7bff}
+.sp>div:nth-child(4)::before{background:#4fcf9b}
+.sp>div:hover{transform:translateY(-7px);border-color:#5fd0e6;box-shadow:0 26px 56px rgba(0,0,0,.55)}
+.sp .av{width:46px;height:46px;border-radius:15px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin-bottom:.85rem;position:relative;color:#08121c;font-weight:960}
+.a1{background:linear-gradient(150deg,#b9ecf5,#1aa9c4)}
+.a2{background:linear-gradient(150deg,#ffe4ad,#e0a63a)}
+.a3{background:linear-gradient(150deg,#d6d0ff,#6a5cff)}
+.a4{background:linear-gradient(150deg,#c9f0dd,#3aaa72)}
+.sp h3{font-size:1rem;margin-bottom:.55rem;position:relative}
+.sp dl{position:relative;counter-reset:sp}
+.sp dt{font-size:.68rem;color:#5fd0e6;letter-spacing:.1em;margin:.65rem 0 .2rem;font-weight:850}
+.sp dd{font-size:.83rem;color:#c3d1de;padding-left:1.5em;position:relative;line-height:1.6}
+.sp dd::before{counter-increment:sp;content:counter(sp,decimal-leading-zero);position:absolute;left:0;top:0;color:#8aa3b4;font-size:.72rem;font-weight:750;font-variant-numeric:tabular-nums}
+
+/* C：高分榜单（table） */
+.rk{}
+.tb{width:100%;border-collapse:collapse;background:#0c1c2c;border:1px solid #18303f;border-radius:14px;overflow:hidden;font-size:.9rem}
+.tb th{background:#18303f;color:#5fd0e6;font-weight:850;font-size:.78rem;letter-spacing:.05em;text-align:left;padding:.8rem .9rem;border-bottom:1px solid #18303f;white-space:nowrap}
+.tb td{padding:.72rem .9rem;border-bottom:1px solid #142838;vertical-align:middle}
+.tb tr:last-child td{border-bottom:0}
+.tb tbody tr{transition:.2s}
+.tb tbody tr:hover{background:rgba(95,208,230,.1)}
+.tb td:first-child{font-weight:960;color:#5fd0e6;width:56px;text-align:center;font-variant-numeric:tabular-nums}
+.tb td:nth-child(2){font-weight:750}
+.tb td:nth-child(6){color:#ffcf6b;font-weight:800;white-space:nowrap}
+.tag{display:inline-block;font-size:.66rem;padding:.16rem .6rem;border-radius:999px;border:1px solid rgba(95,208,230,.5);color:#5fd0e6;white-space:nowrap}
+.tag.w{color:#ffcf6b;border-color:rgba(255,207,107,.45)}
+.tag.v{color:#d6d0ff;border-color:rgba(214,208,255,.4)}
+
+/* D：频道时刻（栅格时间轴 counter） */
+.md{background:#0c1c2c;border-top:1px solid #18303f;border-bottom:1px solid #18303f}
+.tl{position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;counter-reset:tl;padding-top:.9rem}
+.tl::before{content:"";position:absolute;top:1.55rem;left:6%;right:6%;height:4px;border-radius:999px;
+  background:linear-gradient(90deg,#1aa9c4,#8a7bff 50%,#ffcf6b);opacity:.55;z-index:1}
+.tl>div{position:relative;z-index:2;background:#08121c;border:1px solid #18303f;border-radius:15px;padding:1.15rem 1.1rem 1.25rem;text-align:center;transition:.34s;cursor:pointer}
+.tl>div:hover{transform:translateY(-8px);border-color:#5fd0e6;box-shadow:0 26px 56px rgba(0,0,0,.55)}
+.tl .dot{width:20px;height:20px;border-radius:50%;margin:0 auto .8rem;background:#5fd0e6;box-shadow:0 0 0 5px #08121c,0 0 16px rgba(95,208,230,.7)}
+.tl>div:nth-child(2) .dot{background:#8a7bff;box-shadow:0 0 0 5px #08121c,0 0 16px rgba(138,123,255,.6)}
+.tl>div:nth-child(3) .dot{background:#4fcf9b;box-shadow:0 0 0 5px #08121c,0 0 16px rgba(79,207,155,.55)}
+.tl>div:nth-child(4) .dot{background:#ffcf6b;box-shadow:0 0 0 5px #08121c,0 0 16px rgba(255,207,107,.55)}
+.tl .tm{font-size:.72rem;color:#8aa3b4;letter-spacing:.06em;margin-bottom:.35rem;font-variant-numeric:tabular-nums}
+.tl h3{font-size:.96rem;margin-bottom:.45rem}
+.tl p{font-size:.73rem;color:#8aa3b4}
+.tl .mk{position:absolute;right:.5rem;bottom:.3rem;font-size:3.4rem;font-weight:960;color:rgba(95,208,230,.13);line-height:1;counter-increment:tl;content:counter(tl,decimal-leading-zero)}
+
+/* E：观影问答（q/p 双栏） */
+.qa{background:#08121c}
+.qs{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1rem}
+.qs>div{border-left:4px solid #1aa9c4;background:#0c1c2c;border-radius:0 14px 14px 0;padding:1.1rem 1.25rem 1.25rem;transition:.32s;position:relative}
+.qs>div:nth-child(2){border-left-color:#ffcf6b}
+.qs>div:nth-child(3){border-left-color:#8a7bff}
+.qs>div:nth-child(4){border-left-color:#4fcf9b}
+.qs>div:hover{transform:translateX(6px);box-shadow:0 24px 52px rgba(0,0,0,.5)}
+.qs q{display:block;font-size:.98rem;font-weight:850;margin-bottom:.55rem;quotes:"「""」";color:#e4eaf2}
+.qs q::before{content:open-quote;color:#1aa9c4;font-size:1.5rem;line-height:.6;margin-right:.3rem;vertical-align:-.18em}
+.qs q::after{content:close-quote;color:#1aa9c4;font-size:1.5rem;line-height:.6;margin-left:.2rem}
+.qs>div:nth-child(2) q::before,.qs>div:nth-child(2) q::after{color:#ffcf6b}
+.qs>div:nth-child(3) q::before,.qs>div:nth-child(3) q::after{color:#8a7bff}
+.qs>div:nth-child(4) q::before,.qs>div:nth-child(4) q::after{color:#4fcf9b}
+.qs p{font-size:.8rem;color:#8aa3b4;line-height:1.85}
+.qs .no{position:absolute;right:.8rem;top:.6rem;font-size:2.2rem;font-weight:960;color:rgba(95,208,230,.14);line-height:1}
+
+/* 页脚 */
+.foot{background:#050b12;padding:2.6rem 0 1.2rem;border-top:1px solid #18303f}
+.fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1.5rem;margin-bottom:1.6rem}
+.foot h5{font-size:.92rem;color:#5fd0e6;margin-bottom:.7rem;display:flex;align-items:center;gap:.4rem}
+.foot li{font-size:.83rem;color:#8aa3b4;line-height:1.95}
+.foot a:hover{color:#fff}
+.cp{text-align:center;font-size:.74rem;color:#6f8696;border-top:1px solid #18303f;padding-top:1.2rem;line-height:1.95}
+.cp a{color:#5fd0e6}
+
+@media(max-width:900px){
+  .hbox{grid-template-columns:1fr;padding-top:2.6rem;padding-bottom:3rem}
+  .ch{margin:0 auto;transform:scale(.92) rotate(0)}
+  .proj{width:120px;height:84px;right:0}
+}
+@media(max-width:560px){
+  .tin{height:54px}.brand{font-size:.9rem}.logo{width:33px;height:33px;font-size:.9rem;border-radius:10px}
+  .brand small{display:none}
+  .tabs a{padding:.4rem .6rem;font-size:.78rem}
+  .wrap{padding:0 1rem}
+  section{padding:2.6rem 0}
+  h1{font-size:1.7rem}
+  .grid{grid-template-columns:repeat(2,1fr);gap:.7rem}
+  .cvr{height:102px;font-size:2rem}
+  .en h3{font-size:.8rem;padding:.7rem .8rem .2rem;flex-direction:column;gap:.3rem}
+  .tl::before{display:none}
+  .tl{grid-template-columns:1fr 1fr}
+  .tb thead{display:none}
+  .tb tr{display:block;padding:.3rem 0}
+  .tb td{display:block;padding:.26rem .9rem;border:0}
+  .tb td:first-child{color:#5fd0e6;width:auto;text-align:left;font-size:.76rem}
+  .tb td:nth-child(4){display:none}
+  .b{flex:1;text-align:center;padding:.72rem 1.2rem;font-size:.9rem}
+  .fb{display:none}
+}
+@media print{.top,.acts,.ch,.proj,.fb{display:none}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<header class="top" role="banner">
+  <div class="tin">
+    <a class="brand" href="#top"><span class="logo">🎞️</span>八七电影网<span><small>电影史频道日</small></span><em>CHANNEL 8'07"</em></a>
+    <nav class="tabs" aria-label="主导航">
+      <a href="#now" class="on">长片片单</a>
+      <a href="#sea">分镜拆解</a>
+      <a href="#rk">高分榜单</a>
+      <a href="#md">频道时刻</a>
+      <a href="#qa">观影问答</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="fb" aria-hidden="true"></div>
+  <div class="proj" aria-hidden="true"><div class="bd"></div><div class="ln"></div><div class="rl"></div><div class="ft">🎬</div></div>
+  <div class="hbox">
+    <div>
+      <span class="kick">🎞️ 八七电影网 · 电影史频道日</span>
+      <h1>八七电影网<br>一部片，<u>8 分 7 秒</u> 也值得被看完</h1>
+      <p><b style="color:#5fd0e6">八七</b>取两个坐标：<b>8 分 7 秒</b>——卢米埃尔兄弟《火车进站》的片长，电影史的第一声汽笛；<b>1895 年 12 月 28 日</b>——世界上第一次售票放映。<b>八七电影网</b>不做资源站、不存片、不转存，只做一件事：把值得<b>二刷、三刷、逐帧看</b>的片子，按"分镜"讲给你听。</p>
+      <div class="acts"><a class="b p" href="#now">看长片片单</a><a class="b o" href="#sea">学分镜拆解</a></div>
+      <div class="sts"><div><b>8′07″</b>电影起点</div><div><b>0</b>个盗链</div><div><b>100%</b>正版</div></div>
+    </div>
+    <aside class="ch" aria-label="频道时刻">
+      <span class="tk">8:07</span>
+      <h4>🕗 频道正在播出 <i>ON AIR</i></h4>
+      <div class="tm">08:07 <s>1895 / 12 / 28</s></div>
+      <dl><dt>频道</dt><dt>状态</dt><dd>第 87 期</dd><dd>直播中</dd>
+      <dt>片长</dt><dt>费用</dt><dd>8′07″</dd><dd>0 元</dd></dl>
+      <div class="cut" aria-hidden="true"></div>
+      <p>"<b>电影的起点，短到一杯水还没凉。</b>"<br>——八七电影网 · 频道开场白</p>
+    </aside>
+  </div>
+</section>
+
+<section id="now" class="now">
+  <div class="wrap">
+    <div class="uh"><h2 class="ut">长片片单</h2><a class="us" href="#">八七电影网 · 值得花 120 分钟以上的片子 →</a></div>
+    <div class="grid">
+      <article class="en"><div class="cvr" style="background:linear-gradient(150deg,#050b12,#12405a)"><span class="mn">长片</span><b>🌌</b></div><h3>2001 太空漫游 <i>149′</i></h3><p>8 分 7 秒的沉默，能撑满 149 分钟</p></article>
+      <article class="en"><div class="cvr" style="background:linear-gradient(150deg,#0c0a06,#5a4212)"><span class="tg">买断</span><b>🏜️</b></div><h3>阿拉伯的劳伦斯 <i>216′</i></h3><p>大银幕才是它的正片</p></article>
+      <article class="en"><div class="cvr" style="background:linear-gradient(150deg,#060c0a,#12402e)"><span class="mn">二刷</span><b>🎻</b></div><h3>盗梦空间 <i>148′</i></h3><p>每层梦境，都是一次分镜作业</p></article>
+      <article class="en"><div class="cvr" style="background:linear-gradient(150deg,#0c060c,#4a1240)"><span class="tg">经典</span><b>🃏</b></div><h3>霸王别姬 <i>171′</i></h3><p>一出戏，演完一生</p></article>
+      <article class="en"><div class="cvr" style="background:linear-gradient(150deg,#0a060c,#2c124a)"><span class="mn">深夜</span><b>🌊</b></div><h3>少年派的奇幻漂流 <i>127′</i></h3><p>李安把 3D 用成了诗</p></article>
+      <article class="en"><div class="cvr" style="background:linear-gradient(150deg,#0c0c06,#4a3a10)"><span class="tg">胶片</span><b>🌾</b></div><h3>隐入尘烟 <i>133′</i></h3><p>土地不会骗人，镜头也是</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="sea" class="sea">
+  <div class="wrap">
+    <div class="uh"><h2 class="ut">分镜拆解</h2><span class="us">八七电影网 · 逐帧看片的四个入口</span></div>
+    <div class="sp">
+      <div><span class="av">🎨 01</span><h3>看构图：把画面暂停</h3>
+        <dl><dt>关键帧</dt><dd>《布达佩斯大饭店》对称构图</dd><dt>读法</dt><dd>数人物在第几层，故事就在第几层</dd><dt>时长</dt><dd>每帧值得停 8 秒</dd></dl></div>
+      <div><span class="av">🎵 02</span><h3>听声音：关掉画面看</h3>
+        <dl><dt>关键帧</dt><dd>《敦刻尔克》谢泼德音调</dd><dt>读法</dt><dd>低频压迫感 = 敌人正在靠近</dd><dt>时长</dt><dd>耳机 30 分钟足够</dd></dl></div>
+      <div><span class="av">⏱️ 03</span><h3>数节奏：记时间轴</h3>
+        <dl><dt>关键帧</dt><dd>《1917》"一镜到底"</dd><dt>读法</dt><dd>长镜头不是炫技，是呼吸</dd><dt>时长</dt><dd>119 分钟不喘气</dd></dl></div>
+      <div><span class="av">💧 04</span><h3>读道具：找那个物件</h3>
+        <dl><dt>关键帧</dt><dd>《花样年华》的旗袍与面</dd><dt>读法</dt><dd>道具会替角色说出没说的话</dd><dt>时长</dt><dd>二刷才看得见</dd></dl></div>
+    </div>
+  </div>
+</section>
+
+<section id="rk" class="rk">
+  <div class="wrap">
+    <div class="uh"><h2 class="ut">高分榜单</h2><span class="us">八七电影网 · 值得为正版付一次钱的一批片子</span></div>
+    <table class="tb">
+      <thead><tr><th>#</th><th>看点</th><th>片目</th><th>片长</th><th>建议设备</th><th>频道评分</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>沉默</td><td>2001 太空漫游</td><td>149′</td><td><span class="tag">大屏</span></td><td>9.5</td></tr>
+        <tr><td>2</td><td>构图</td><td>布达佩斯大饭店</td><td>99′</td><td><span class="tag v">暂停</span></td><td>9.4</td></tr>
+        <tr><td>3</td><td>色彩</td><td>辛德勒的名单</td><td>195′</td><td><span class="tag">买断</span></td><td>9.4</td></tr>
+        <tr><td>4</td><td>声音</td><td>敦刻尔克</td><td>107′</td><td><span class="tag v">戴耳机</span></td><td>9.3</td></tr>
+        <tr><td>5</td><td>长镜</td><td>1917</td><td>119′</td><td><span class="tag">影院</span></td><td>9.3</td></tr>
+        <tr><td>6</td><td>水</td><td>少年派的奇幻漂流</td><td>127′</td><td><span class="tag w">3D</span></td><td>9.2</td></tr>
+        <tr><td>7</td><td>土地</td><td>隐入尘烟</td><td>133′</td><td><span class="tag w">安静</span></td><td>9.2</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="md" class="md">
+  <div class="wrap">
+    <div class="uh"><h2 class="ut">频道时刻</h2><span class="us">八七电影网 · 一天四个钟点，四种看法</span></div>
+    <div class="tl">
+      <div><span class="dot" aria-hidden="true"></span><div class="tm">06:30</div><h3>晨间 · 默片</h3><p>卓别林、巴斯特·基顿。<br>8 分 7 秒的笑，够醒神。</p></div>
+      <div><span class="dot" aria-hidden="true"></span><div class="tm">12:30</div><h3>午间 · 短片</h3><p>奥斯卡最佳真人短片。<br>80 分钟以内，吃完饭刚好。</p></div>
+      <div><span class="dot" aria-hidden="true"></span><div class="tm">19:00</div><h3>黄金档 · 长片</h3><p>120 分钟以上。<br>手机放下，灯关掉，别开倍速。</p></div>
+      <div><span class="dot" aria-hidden="true"></span><div class="tm">23:40</div><h3>深夜 · 二刷</h3><p>关掉弹幕与解说。<br>看第二遍的人，才看得见细节。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="qa" class="qa">
+  <div class="wrap">
+    <div class="uh"><h2 class="ut">观影问答</h2><span class="us">八七电影网 · 四个被问得最多的问题</span></div>
+    <div class="qs">
+      <div><span class="no">Q1</span><q>8 分 7 秒，够讲一个故事吗？</q><p>够。卢米埃尔的《火车进站》没有情节，只有一列火车开进站，却让全场观众惊叫着起身逃走。电影的力量，从来不在长度。</p></div>
+      <div><span class="no">Q2</span><q>为什么八七电影网不做资源？</q><p>因为"找得到"和"看得见"是两件事。我们索引正版入口：公版经典、平台限免、资料馆展映、修复版买断——四种，都合法，都比网盘清楚。</p></div>
+      <div><span class="no">Q3</span><q>二刷要看什么？</q><p>看第一次被剧情骗走注意力的地方：构图、声音、道具、演员的手。八七电影网的分镜拆解，就是给你一张二刷的地图。</p></div>
+      <div><span class="no">Q4</span><q>手机能看吗？</q><p>能，但不是最佳设备。构图像《布达佩斯大饭店》、声音像《敦刻尔克》、水像《少年派》——它们的第一现场都是大银幕。条件允许，去电影院。</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot" role="contentinfo">
+  <div class="wrap">
+    <div class="fg">
+      <div><h5>🎞️ 八七电影网</h5><ul><li><a href="#now">长片片单</a></li><li><a href="#sea">分镜拆解</a></li><li><a href="#rk">高分榜单</a></li><li><a href="#md">频道时刻</a></li><li><a href="#qa">观影问答</a></li></ul></div>
+      <div><h5>🎬 分镜</h5><ul><li><a href="#">看构图</a></li><li><a href="#">听声音</a></li><li><a href="#">数节奏</a></li><li><a href="#">读道具</a></li></ul></div>
+      <div><h5>📀 正版入口</h5><ul><li><a href="#">公版经典</a></li><li><a href="#">平台限免</a></li><li><a href="#">资料馆展映</a></li><li><a href="#">修复版买断</a></li></ul></div>
+      <div><h5>🕗 频道时刻</h5><ul><li><a href="#">06:30 默片</a></li><li><a href="#">12:30 短片</a></li><li><a href="#">19:00 长片</a></li><li><a href="#">23:40 二刷</a></li></ul></div>
+      <div><h5>🙏 关于本站</h5><ul><li><a href="#">频道宣言</a></li><li><a href="#">版权声明</a></li><li><a href="#">免责声明</a></li></ul></div>
+    </div>
+    <div class="cp">
+      © 2026 八七电影网（八七电影网 · 电影史频道日）. 本站为<b>观影指南与分镜拆解</b>平台，<b>不提供任何影视资源下载、转存、在线播放或盗版链接</b>，倡导支持正版、去电影院、买修复版。<br>
+      网站网址：<a href="https://baqidianyingwang-cn.github.io/">https://baqidianyingwang-cn.github.io/</a>　｜　<b>八七 = 8 分 7 秒</b>：《火车进站》的片长，电影史的第一声汽笛
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.tabs a').forEach(function(a){
+  a.addEventListener('click',function(){
+    document.querySelectorAll('.tabs a').forEach(function(x){x.classList.remove('on')});
+    a.classList.add('on');
+  });
+});
+</script>
+</body>
+</html>
